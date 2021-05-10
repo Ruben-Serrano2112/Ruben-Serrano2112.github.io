@@ -8,10 +8,9 @@ function gestionarFicheroXML(xmlDoc)
     capaVacia.innerHTML = capaVacia.innerHTML + "<div>" + libros[i].textContent + "</div>"
 }
 
-let capa = document.querySelectorAll("nombre") 
+let capa = document.querySelector("div") 
 capa.addEventListener("click",CargarFichero);
 function CargarFichero()
 {
 	loadDocA("leerFicheroXML.xml","xml");
 }
-
