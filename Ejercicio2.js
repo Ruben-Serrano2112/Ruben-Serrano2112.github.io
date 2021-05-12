@@ -13,5 +13,5 @@ let capa = document.querySelector("div")
 capa.addEventListener("click",CargarFichero);
 function CargarFichero()
 {
-	loadDocA("leerFicheroXML.xml","xml");
+	loadDocA("Ejercicio2.xml","xml");
 }
