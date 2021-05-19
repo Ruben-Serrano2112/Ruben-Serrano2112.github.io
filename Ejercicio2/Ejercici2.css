@@ -1,0 +1,13 @@
+div
+{
+    border: 1px solid black;
+}
+.izquierda 
+{
+            background-color: lawngreen;
+}
+
+.derecha
+{
+            background-color: darkgray;
+}
