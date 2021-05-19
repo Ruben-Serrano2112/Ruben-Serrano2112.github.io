@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+     <head> 
+        <title>texto</title>
+        <meta charset="UTF-8" />
+        <link href="CSS.css" media="all" type="text/css" rel="stylesheet"/>
+
+     </head>
+    <body>
+        <div class="caja">
+            <form class="fila">
+                <label class="celda">Email:</label>
+                <input type="email"  name="email" required/>
+                <label class="celda">Contraseña:</label>
+                <input type="password" name="password" required/>
+                <input type="button" value="Enviar" onclick="verifacionContraseña()" onclick="verifacionEmail()"/>
+            </form>
+        </div>
+        <script src="password.js"></script>
+        <script src="email.js"></script>
+    </body>
+</html>
