@@ -10,8 +10,7 @@ function gestionarFicheroTXT(txtDoc) {
 			capaVacia.innerHTML = capaVacia.innerHTML + "<div class='derecha'>" + conversacion[i] + "</div>"
 		}
 }
-let capa = document.querySelector("div")
-capa.addEventListener("click", CargarFichero);
+setInverval( CargarFichero,5000);
 function CargarFichero() {
 	loadDocA("Mensajes.txt", "txt");
 }
