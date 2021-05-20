@@ -1,25 +1,20 @@
-
-function gestionarFicheroXML(xmlDoc){ //Al ser un txt tienes que poner gestionarFicheroTXT(txtDoc)
-	alert(xmlDoc) 
+function gestionarFicheroTXT(txtDoc){ //Al ser un txt tienes que poner gestionarFicheroTXT(txtDoc)
+	alert(txtDoc)
 	let capaVacia = document.querySelector("#ficheroXML")
-	let conversacion = xmlDoc.querySelectorAll("Mensajes") //Ya no puede hacer un querySelector del txtDoc. 
+	let conversacion = txtDoc.textContent("");  //Ya no puede hacer un querySelector del txtDoc. 
 	for(let i=0; i<conversacion.length; i++)
-		if (i == 2)
+		if (i % 2 == 0)
 		{
 		capaVacia.innerHTML = capaVacia.innerHTML + "<div class='izquierda'>" + conversacion[i].textContent + "</div>"
 		}
 		else
 		{
 		capaVacia.innerHTML = capaVacia.innerHTML + "<div class='derecha'>" + conversacion[i].textContent + "</div>"
-
 		}
-        alert("recargo")
-        loadDocA("conver.xml","xml");
-
 }
 let capa = document.querySelector("div") 
 capa.addEventListener("click",CargarFichero);
 function CargarFichero()
 {
-        loadDocA("Mensajes.xml","xml");
+        loadDocA("Mensajes.txt","txt");
 }
