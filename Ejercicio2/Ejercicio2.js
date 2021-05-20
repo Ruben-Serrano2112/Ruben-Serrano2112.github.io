@@ -1,6 +1,6 @@
 function gestionarFicheroTXT(txtDoc) {
 	let capaVacia = document.querySelector("#ficheroXML")
-	alert("Voy a trocear")
+	capaVacia.innerHTML =""
 	let conversacion = txtDoc.split("\n");
 	for (let i = 0; i < conversacion.length; i++)
 		if (i % 2 == 0) {
