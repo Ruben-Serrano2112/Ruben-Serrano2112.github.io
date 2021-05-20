@@ -1,7 +1,7 @@
 function gestionarFicheroTXT(txtDoc) {
-	alert(txtDoc)
 	let capaVacia = document.querySelector("#ficheroXML")
 	let conversacion = txtDoc.split("\n");
+	alert(conversacion)
 	for (let i = 0; i < conversacion.length; i++)
 		if (i % 2 == 0) {
 			capaVacia.innerHTML = capaVacia.innerHTML + "<div class='izquierda'>" + conversacion[i].textContent + "</div>"
