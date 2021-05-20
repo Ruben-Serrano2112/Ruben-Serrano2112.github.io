@@ -1,7 +1,8 @@
-function gestionarFicheroXML(xmlDoc){
-	alert(xmlDoc)
+
+function gestionarFicheroXML(xmlDoc){ //Al ser un txt tienes que poner gestionarFicheroTXT(txtDoc)
+	alert(xmlDoc) 
 	let capaVacia = document.querySelector("#ficheroXML")
-	let conversacion = xmlDoc.querySelectorAll("Mensajes")
+	let conversacion = xmlDoc.querySelectorAll("Mensajes") //Ya no puede hacer un querySelector del txtDoc. 
 	for(let i=0; i<conversacion.length; i++)
 		if (i == 2)
 		{
